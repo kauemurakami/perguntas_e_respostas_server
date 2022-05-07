@@ -14,6 +14,6 @@ const Question = connection.define(
   }
 );
 //caso nao exista ele cria, e nao irá forçar caso ela exista (recriar)
-Question.sync({force: false}).then(()=> {console.log('tabela criada')})
+Question.sync({force: false}).then(()=> {console.log('tabela criada questions')})
 
 module.exports = Question
